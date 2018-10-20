@@ -1,0 +1,134 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/*DEFINING THE GRID SYSTEM*/
+@media screen and (min-width:700px)
+{
+    #grid-container
+    {
+        display: grid;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns:2fr 6fr 6fr 3fr 1fr;        
+
+    }
+
+    /*********************************************/
+
+    #nested-icons
+    {
+        display: grid;
+        height:100% ;
+        grid-template-rows: repeat(6,1fr);
+    }
+
+    #search
+    {
+        grid-row: 1/2;
+        padding: 20px;
+    }
+    #social
+    {
+        grid-row: 6/7;
+        padding: 20px;
+        
+    }
+    #social ul
+    {
+        list-style-type: none;
+    }
+    #social li
+    {
+        margin: 10px;
+    }
+
+
+    /*********************************************/
+
+    #logic
+    {
+        display: grid;
+        height:100% ;
+        grid-template-rows: repeat(7,1fr);
+    }
+
+    #text
+    {
+        grid-row:3/5;
+        
+        
+    }
+    #text p
+    {
+      font-size: 6em;
+      margin-top: -60px;
+    }
+
+    /* .special-i
+    {
+        color:  rgb(233, 7, 64);
+        position: relative;
+        overflow: hidden;
+    } */
+
+  
+    #red-icons
+    {
+        grid-row:2/3;
+        text-align: center;
+    }
+
+    .red
+    {
+        width:70px;
+        height: 70px;
+        color: aliceblue;
+        background-color: rgb(233, 7, 64);
+        border-radius: 50%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .red i
+    {
+        margin-top: 30%;
+    }
+
+    #footer
+    {
+        grid-row:7/8;
+        background: rgb(19, 18, 18);
+        color: aliceblue;
+    }
+
+    #footer ul
+    {
+       display: grid;
+       padding: 10px;
+       height: 100%;
+       list-style-type: none;
+       grid-template-columns: 65% 35%;
+    }
+
+   #footer li:first-child
+   {
+        margin-top: 25%;
+   }
+
+   #footer li:nth-child(2)
+   {
+        margin-top: 48%;
+   }
+
+   
+ 
+
+
+    
+}
+
